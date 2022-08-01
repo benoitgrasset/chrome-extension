@@ -1,9 +1,24 @@
 {
   "name": "Strava scrapper",
+  "description": "",
   "version": "1.0",
   "manifest_version": 3,
+  "permissions": ["storage", "activeTab", "scripting"],
   "background": {
-    "service_worker": "index.js"
+    "service_worker": "background.js"
   },
-  "action": {}
+  "action": {
+    "default_popup": "popup.html",
+    "default_tile": "Strava",
+    "default_icon": {
+      "16": "logo.png",
+      "48": "logo.png",
+      "128": "logo.png"
+    }
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  }
 }
